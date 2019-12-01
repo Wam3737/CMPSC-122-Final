@@ -4,12 +4,16 @@
 #include "Section.h"
 #include<string>
 #include<array>
+#include<vector>
+#include<time.h>
 using namespace std;
 class Schedule {
 private:
-	// 5 days a week, 12 1 hour chunks a day
-	Section week[5][12];
+	Section nullSec = Section();
+	Section week[5][13];
+	
 public: 
-	Schedule()
+	Schedule();
+	void addSection(Section sec);
 };
 #endif
