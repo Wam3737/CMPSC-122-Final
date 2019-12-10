@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -116,6 +116,22 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Meeting.cpp" />
+    <ClCompile Include="Schedule.cpp" />
+    <ClCompile Include="Section.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Meeting.h" />
+    <ClInclude Include="OneDay.h" />
+    <ClInclude Include="Rule.h" />
+    <ClInclude Include="Schedule.h" />
+    <ClInclude Include="Section.h" />
+    <ClInclude Include="SplicedMeeting.h" />
+    <ClInclude Include="ThreeDays.h" />
+    <ClInclude Include="TwoDays.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="sections.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

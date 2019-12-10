@@ -26,8 +26,9 @@ public:
 	Section();
 	
 	string getCourse();
-	/*
+	
 	string getInstructor();
+	/*
 	vector<int> getDays();
 	void shuffleType(int type);
 	*/

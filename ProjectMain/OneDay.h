@@ -21,7 +21,22 @@ public:
 		else {
 			throw new InvalidDayException;
 		}
-		setStart(start);
+		if (start < 8) {
+			startTime = 8;
+		}
+		else if (start < 12) {
+			startTime = 9;
+		}
+		else if (start == 12) {
+			startTime = 13;
+		}
+		else if (start > 18) {
+			startTime = 18;
+		}
+		else {
+			startTime = start;
+		}
+		endTime = startTime + 3;
 	};
 	//if start is 12 it'll be set to 13 instead start can be 18 at the latest
 	void setStart(int start) {
