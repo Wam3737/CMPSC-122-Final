@@ -4,7 +4,7 @@
       "inheritEnvironments": [
         "msvc_x64"
       ],
-      "name": "x64-Debug",
+      "name": "Debug",
       "includePath": [
         "${env.INCLUDE}",
         "${workspaceRoot}\\**"

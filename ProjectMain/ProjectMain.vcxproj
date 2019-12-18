@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -84,6 +85,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -94,6 +96,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -108,6 +111,7 @@
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -116,19 +120,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Meeting.cpp" />
+    <ClCompile Include="Optimizer.cpp" />
     <ClCompile Include="Schedule.cpp" />
     <ClCompile Include="Section.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Meeting.h" />
-    <ClInclude Include="OneDay.h" />
+    <ClInclude Include="Optimizer.h" />
     <ClInclude Include="Rule.h" />
     <ClInclude Include="Schedule.h" />
     <ClInclude Include="Section.h" />
-    <ClInclude Include="SplicedMeeting.h" />
-    <ClInclude Include="ThreeDays.h" />
-    <ClInclude Include="TwoDays.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="sections.txt" />
